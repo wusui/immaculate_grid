@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Immaculate Grid</title>
+<style>
+h1 {
+	text-align: center;
+	font-weight: bold;
+        font-size: 60px;
+        font-family: Arial, sans-serif;
+}
+h2 {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+}
+a, p {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+li {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.table-container {
+    display: flex; /* Aligns items side-by-side */
+    gap: 10px; /* Space between tables */
+    width: 100%;
+  }
+.table-container table {
+    flex: 1; /* Each table takes equal width */
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #ccffcc
+  }
+</style>
+</head>
+<title>
+SOLUTION {{index}}
+</title>
+<body>
+<br><br>
+<h1>
+SOLUTION {{index}}
+</h1>
+<br>
+<p style="font-size: 60px;font-family: Arial, sans-serif;text-align: center;">
+{{answer}}
+</p>
+<br>
+<div class="table-container"
+    <table>
+	{% for tbl in table %}
+	    <table>
+	    <tr><th>Teams</th><th>No.</th><th>Player</th></tr>
+		{% for paird in tbl %}
+	   	    <tr>
+			{% for value in paird %}
+		   		<td>{{value}}</td>
+			{% endfor %}
+	   		</tr>
+		{% endfor %}
+		</table>
+	{% endfor %}
+    </table>
+</div>
+</body>
+</html>

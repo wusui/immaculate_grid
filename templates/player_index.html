@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Immaculate Grid</title>
+<style>
+h1 {
+	text-align: center;
+	font-weight: bold;
+        font-size: 60px;
+        font-family: Arial, sans-serif;
+}
+h2 {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+}
+a, p {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+li {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<title>
+PLAYER INDEX
+</title>
+<body>
+<br><br>
+<h1>
+PLAYER INDEX
+</h1>
+<br><br>
+<p style="text-align: center;">The following is a list of all
+players that appear on any solution.
+Each player name is followed
+by a list of the solutions where that player appears.
+</p>
+<br><br>
+<table style="font-size: 30px;font-family: Arial, sans-serif;
+		margin-left: auto; margin-right: auto;">
+<tbody>
+	{% for key, values in in_data %}
+	<tr>
+		<td>{{key}}</td>
+		<td>
+			{% for entry in values %}
+				<a style="font-size: 32px,"
+				href="./solutions{{entry}}.html">{{entry}}</a>
+			{% endfor %}
+		</td>
+	</tr>
+	{% endfor %}
+</tbody>
+</table>
+</body>
+</html>

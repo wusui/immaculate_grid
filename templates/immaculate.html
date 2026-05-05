@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Immaculate Grid</title>
+</head>
+<style>
+h1 {
+	text-align: center;
+	font-weight: bold;
+        font-size: 60px;
+        font-family: Arial, sans-serif;
+}
+h2 {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+}
+a, p {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+li {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+</style>
+</head>
+<title>
+MINIMAL PLAYERS NEEDED --IMMACULATE GRID SOLUTIONS
+</title>
+<body>
+<br><br>
+<h1>
+Minimal Players Needed -- Immaculate Grid Solutions
+</h1>
+<br><br>
+<h2>
+INTRODUCTION
+<h2>
+<p>
+In 2023, discusssions on Reddit /baseball and the Facebook "because it's baseball" group asked what the minimum number
+of players needed to be able to fill every possible square on an Immaculate Grid where the row and column were both
+MLB teams.  The concensus then was that you needed 19 players to do this.
+</p>
+<p>
+Fast forward to 2026.  Three years later, more players have played on more teams and it now appears possible that only
+18 players are needed.  This page contains lists of groups of players that are 18 players long, and for each list a tedious table
+of team pairs demonstrating that at least one player from the group has played on both those teams.
+</p>
+<h2>
+CAVEATS
+</h2>
+<p>
+Teams have moved and changed names over the years.  Because of this, the following teams are considered to be the same team:
+<ul>
+<li>Angels -- Los Angeles Angels, Anaheim Angels, California Angels, Los Angeles Angels of Anaheim</li>
+<li>Astros -- Houston Astros, Houston Colt .45's</li>
+<li>Athletics -- Oakland Athletics, Philadelphia Athletics, Kansas City Athletics, Whatever they are now Athletics</li>
+<li>Braves -- Boston Braves, Milwaukee Braves, Atlanta Braves</li>
+<li>Brewers -- Milwaukee Brewers, Seattle Pilots</li>
+<li>Dodgers -- Los Angeles Dodgers, Brooklyn Dodgers</li>
+<li>Giants -- San Francisco Giants, New York Giants</li>
+<li>Guardians -- Cleveland Guardians, Cleveland Indians</li>
+<li>Marlins -- Miami Marlins, Florida Marlins</li>
+<li>Nationals -- Washington Nationals, Montreal Expos</li>
+<li>Orioles -- Baltimore Orioles, St. Louis Browns, 1901 American League Milwaukee Brewers</li>
+<li>Rangers -- Texas Rangers, Washington Senators between 1961 and 1971</li>
+<li> Rays -- Tampa Bay Rays, Tampa Bay Devil Rays</li>
+<li>Twins -- Minnesota Twins, Washington Senators before 1961</li>
+</ul>
+</p>
+<p>
+The player named Dave Roberts in these lists is a pitcher who played for 8 different teams between 1969 and 1980, not the
+current manager of the Dodgers.
+</p>
+<h2>
+LINKS
+</h2>
+<a href="./player_index.html">Player Index</a>
+<br>
+<br>
+<p>There are at least {{snumb}} solutions.</p>
+{% for item in slist %}
+    <a href="./solutions{{item}}.html">{{item}}</a>
+{% endfor %}
+</body>
+</html>
